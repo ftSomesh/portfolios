@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+    <title>Somesh Sahu | Web Developer</title>
+    <!-- Poppins, Raleway - Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="light">
+    <nav>
+        <ul class="sidebar">
+            <li class="svgImgCross"><a id="link" href="/"><svg xmlns="http://www.w3.org/2000/svg" height="26" width="26"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></a></li>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        <ul class="sticky">
+            <li><a href="./index.html">
+                    <div style="overflow: hidden;" class="profile-container skeleton"></div>
+                </a></li>
+            <li class="hideOnMobile"><a href="#welcome-section">About</a></li>
+            <li class="hideOnMobile"><a href="#projects">Work</a></li>
+            <li class="hideOnMobile"><a href="#contacts">Contacts</a></li>
+            <li class="theme-changer">
+                <input type="checkbox" name="darkmode-toggle" id="darkmode-toggle">
+                <label for="darkmode-toggle">
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M294.2 1.2c5.1 2.1 8.7 6.7 9.6 12.1l14.1 84.7 84.7 14.1c5.4 .9 10 4.5 12.1 9.6s1.5 10.9-1.6 15.4l-38.5 55c-2.2-.1-4.4-.2-6.7-.2c-23.3 0-45.1 6.2-64 17.1l0-1.1c0-53-43-96-96-96s-96 43-96 96s43 96 96 96c8.1 0 15.9-1 23.4-2.9c-36.6 18.1-63.3 53.1-69.8 94.9l-24.4 17c-4.5 3.2-10.3 3.8-15.4 1.6s-8.7-6.7-9.6-12.1L98.1 317.9 13.4 303.8c-5.4-.9-10-4.5-12.1-9.6s-1.5-10.9 1.6-15.4L52.5 208 2.9 137.2c-3.2-4.5-3.8-10.3-1.6-15.4s6.7-8.7 12.1-9.6L98.1 98.1l14.1-84.7c.9-5.4 4.5-10 9.6-12.1s10.9-1.5 15.4 1.6L208 52.5 278.8 2.9c4.5-3.2 10.3-3.8 15.4-1.6zM144 208a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM639.9 431.9c0 44.2-35.8 80-80 80l-271.9 0c-53 0-96-43-96-96c0-47.6 34.6-87 80-94.6l0-1.3c0-53 43-96 96-96c34.9 0 65.4 18.6 82.2 46.4c13-9.1 28.8-14.4 45.8-14.4c44.2 0 80 35.8 80 80c0 5.9-.6 11.7-1.9 17.2c37.4 6.7 65.8 39.4 65.8 78.7z" />
+                    </svg>
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M495.8 0c5.5 0 10.9 .2 16.3 .7c7 .6 12.8 5.7 14.3 12.5s-1.6 13.9-7.7 17.3c-44.4 25.2-74.4 73-74.4 127.8c0 81 65.5 146.6 146.2 146.6c8.6 0 17-.7 25.1-2.1c6.9-1.2 13.8 2.2 17 8.5s1.9 13.8-3.1 18.7c-34.5 33.6-81.7 54.4-133.6 54.4c-9.3 0-18.4-.7-27.4-1.9c-11.2-22.6-29.8-40.9-52.6-51.7c-2.7-58.5-50.3-105.3-109.2-106.7c-1.7-10.4-2.6-21-2.6-31.8C304 86.1 389.8 0 495.8 0zM447.9 431.9c0 44.2-35.8 80-80 80L96 511.9c-53 0-96-43-96-96c0-47.6 34.6-87 80-94.6l0-1.3c0-53 43-96 96-96c34.9 0 65.4 18.6 82.2 46.4c13-9.1 28.8-14.4 45.8-14.4c44.2 0 80 35.8 80 80c0 5.9-.6 11.7-1.9 17.2c37.4 6.7 65.8 39.4 65.8 78.7z" />
+                    </svg>
+                </label>
+            </li>
+            <li class="svgImg showOnMobile"><a id="cross" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        width="26"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1 class="skeleton">Hey I am Somesh</h1>
+        <p class="italic skeleton">a web developer</p>
+    </section>
+    <section id="projects">
+        <h2 class="skeleton">Projects I have created so far include...</h2>
+        <div class="project-grid">
+            <a target="_blank" class="project" href="https://ftsomesh.github.io/lostinsilence.sl/">
+                <div class="skeleton img-container-project"><img class="project-image" src="./images/lostinsilence.jpg" alt=""></div>
+                <p class="project-title">
+                    <span class="code">
+                        < </span>Lost in Silence<span class="code">/></span>
+                </p>
+            </a>
+            <a target="_blank" class="project" href="https://ftsomesh.github.io/hamburger.sl/">
+                <div class="skeleton img-container-project"><img class="project-image" src="./images/hamburger.png" alt=""></div>
+                <p class="project-title">
+                    <span class="code">
+                        < </span>
+                            Ham - Burger
+                            <span class="code">/></span>
+                </p>
+            </a>
+            <a target="_blank" class="project" href="https://ftsomesh.github.io/countryinfo.sl/">
+                <div class="skeleton img-container-project"><img class="project-image" src="./images/countryinfo.png" alt=""></div>
+                <p class="project-title">
+                    <span class="code"><</span>Countries Information<span class="code">/></span>
+                </p>
+            </a>
+            <a target="_blank" class="project" href="https://ftsomesh.github.io/productlandingpage.sl/">
+                <div class="skeleton img-container-project"><img class="project-image" src="./images/productlanding.png" alt=""></div>
+                <p class="project-title">
+                    <span class="code">
+                        < </span>
+                            Product Landing Page
+                            <span class="code">/></span>
+                </p>
+            </a>
+            <a target="_blank" class="project" href="https://ftsomesh.github.io/palindromeCheckerPlus/">
+                <div class="skeleton img-container-project"><img class="project-image" src="./images/palindrome.png" alt=""></div>
+                <p class="project-title">
+                    <span class="code">
+                        < </span>
+                            Palindrome Checker
+                            <span class="code">/></span>
+                </p>
+            </a>
+            <a target="_blank" class="project" href="https://ftsomesh.github.io/js-documentation.sl/">
+                <div class="skeleton img-container-project"><img class="project-image" src="./images/documentation.png" alt=""></div>
+                <p class="project-title">
+                    <span class="code">
+                        < </span>
+                            Js - Documentation
+                            <span class="code">/></span>
+                </p>
+            </a>
+        </div>
+    </section>
+    <section id="contacts">
+        <h1 class="skeleton">Let's work together...</h1>
+        <p class="italic skeleton">How do you take your coffee?</p>
+        <div id="contacts-list">
+            <a class="skeleton" id="profile-link" href="https://www.instagram.com/ft.someshh"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+            <a class="skeleton" href="https://www.github.com/ftSomesh"><i class="fa-brands fa-github"></i> Github</a>
+            <a class="skeleton" href="https://www.x.com/programmerizz"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a class="skeleton" href="mailto:desktopsomesh@gmail.com"><i class="fa-solid fa-envelope"></i> Send me a mail</a>
+            <a class="skeleton" href="tel:+918260831867"><i class="fa-solid fa-mobile-screen"></i> Call me</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Somesh Sahu | Web Developer</p>
+    </footer>
+
+
+</body>
+
+</html>
