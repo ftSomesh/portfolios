@@ -10,7 +10,7 @@ Each project has its own folder with a dedicated README describing its details, 
 
 | Project Name | Description | Technologies | Link |
 |--------------|------------|-------------|------|
-| **static-portfolio** | A static portfolio to show case my css skills | HTML, CSS | [Go to Project](./portfolios/html-css/static-portfolio) |
+| **static-portfolio** | A static portfolio to show case my css skills | HTML, CSS | [Go to Project](./html-css/static-portfolio) |
 
 
 > Tip: Click on the project links to see more details and instructions.
